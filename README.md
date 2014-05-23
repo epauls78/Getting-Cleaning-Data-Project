@@ -3,14 +3,14 @@ Getting-Cleaning-Data-Project
 
 Project for Coursera Getting and Cleaning Data Course
 
-#These are the steps followed to obtain TIDY DATA saved as final_table.csv or final_table.txt
-#Steps described are followed in the R script called "Project1.R"
+These are the steps followed to obtain TIDY DATA saved as final_table.csv or final_table.txt
+Steps described are followed in the R script called "Project1.R"
 
-#Data ZIP file was extracted and data from the test (test data) and the actual training (train data) are loaded (test.data and train.data)
-#Corresponding activities ("exercises") and tested individuals ("subjects") for test and train data are added as rows to test.data and train.data
-#Column names are updated and test.data and train.data are merged in a dat frame of 10299 rows (observations) and 563 variables (all.data)
-# 561 variables and in the original data, plus the corresponding individuals and activities (561+2=563)
-# The code activity is replaced following the code:
+Data ZIP file was extracted and data from the test (test data) and the actual training (train data) are loaded (test.data and train.data)
+Corresponding activities ("exercises") and tested individuals ("subjects") for test and train data are added as rows to test.data and train.data
+Column names are updated and test.data and train.data are merged in a dat frame of 10299 rows (observations) and 563 variables (all.data)
+561 variables and in the original data, plus the corresponding individuals and activities (561+2=563)
+The code activity is replaced following the code:
 
 * 1 WALKING
 
@@ -25,16 +25,16 @@ Project for Coursera Getting and Cleaning Data Course
 * 6 LAYING
 
 
-# Now the number of variables are reduced to the ones referring to MEAN and STANDARD DEVIATION
-# To perform this selection, following steps are performed by the R script:
+Now the number of variables are reduced to the ones referring to MEAN and STANDARD DEVIATION
+To perform this selection, following steps are performed by the R script:
 
 * Variables containing "mean" and "sd" are selected
 * Weighted means ("meanFreq") are removed
 * Angle values ("angle") between different vectors are excluded
 * Now 68 of the original 563 variables are kept
 
-# Now the average (mean) per individual ("subject") and activity ("exercise") are obtained for each variable (180 observations)
-# Name of the variables is changed, avoiding brackets and hightlighting if they are means ("mean.") or standard deviations ("sd.") and the axis measured (".x,y,z") 
+Now the average (mean) per individual ("subject") and activity ("exercise") are obtained for each variable (180 observations)
+Name of the variables is changed, avoiding brackets and hightlighting if they are means ("mean.") or standard deviations ("sd.") and the axis measured (".x,y,z") 
 
 *Subject			subject
 *Exercise			exercise
@@ -105,4 +105,4 @@ Project for Coursera Getting and Cleaning Data Course
 *fBodyBodyGyroJerkMag-mean()	mean.freqbodybodygyrojerk.magnitude
 *fBodyBodyGyroJerkMag-std()	sd.freqbodybodygyrojerk.magnitude
  
-#Finally, data is saved in "final_table.csv" (also provided in .txt)
+Finally, data is saved in "final_table.csv" (also provided in .txt)
